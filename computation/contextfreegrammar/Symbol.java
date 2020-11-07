@@ -15,7 +15,7 @@ public abstract class Symbol {
 	 */
 	public Symbol(char symbol) {
 		if(symbol == 'ε') {
-			throw new IllegalArgumentException("ε is reserved for the empty word (see Word.emptyWord).");
+			throw new IllegalArgumentException("Îµ is reserved for the empty word (see Word.emptyWord).");
 		}
 		this.symbol = symbol;
 	}

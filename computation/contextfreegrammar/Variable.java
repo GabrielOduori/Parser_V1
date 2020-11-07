@@ -7,7 +7,7 @@ import java.util.Arrays;
  * <p>
  * This class is slightly more complicated than the Terminal class.
  * To make your life easier, it is nice to have variables named<br>
- * S₀, S₁, S₂,...<br>
+ * Sâ‚€, Sâ‚�, Sâ‚‚,...<br>
  * rather than having to use different letters:<br>
  * S, T, U,...<br>
  * this will become especially clear when you convert a grammar into
@@ -17,7 +17,7 @@ import java.util.Arrays;
  * should handle them consistently as if they were different letters.
  * There is also a {@link #subscriptedVariables(char, int) helper method}
  * which will produce an array of variable objects, 
- * e.g. I want 3 S variables: S₀, S₁, S₂.
+ * e.g. I want 3 S variables: Sâ‚€, Sâ‚�, Sâ‚‚.
  */
 public class Variable extends Symbol {
 
@@ -28,6 +28,7 @@ public class Variable extends Symbol {
 	private final static char empty = '\u0000';
 
 	/** Here are the Unicode subscripts we're using. */
+//	private final static char[] subscripts = {'â‚€', 'â‚�', 'â‚‚', 'â‚ƒ', 'â‚„', 'â‚…', 'â‚†', 'â‚‡', 'â‚ˆ', 'â‚‰'};
 	private final static char[] subscripts = {'₀', '₁', '₂', '₃', '₄', '₅', '₆', '₇', '₈', '₉'}; 
 
 	/**
@@ -90,7 +91,7 @@ public class Variable extends Symbol {
 	 * So the following:<br>
 	 * {@code subscriptedVariables('S', 3)} <br>
 	 * will return an array of 3 subscripted S variables: <br>
-	 * {@literal [S₀, S₁, S₂]}
+	 * {@literal [Sâ‚€, Sâ‚�, Sâ‚‚]}
 	 *
 	 * @param letter the symbol to use for the variables
 	 * @param n how many subscripted variables you want, between 1 to 10 inclusive
